@@ -1,0 +1,281 @@
+@import 'utilities.css';
+:root{
+    --primary:#3DCFD3;
+    --dark:#161616;
+    --pure:#FFFFFF;
+    --ternary:#898989;
+    --light:#F2F2F2;
+
+}
+body{
+    font-family: 'Poppins',sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background: var(--dark);
+    clip-path: polygon(0 0,100% 0,100% 100%,70% 87%,0 100%);
+}
+
+.container{
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+header nav .left a{
+    color: var(--pure);
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+header nav .left a:hover{
+    color:var(--primary);
+}
+header nav{
+    padding: 2rem 0;
+}
+header nav .branding{
+    margin-right: 3rem;
+}
+header nav .branding h1{
+color: var(--pure);
+font-size: 3rem;
+}
+header nav .branding h1 span{
+    color: var(--primary);
+}
+.hero{
+    padding: 3rem 0;
+}
+.hero .left img{
+    width: 400px;
+}
+.hero .right{
+    color: var(--pure);
+    margin-right: 2rem;
+    margin-top: -7rem;
+}
+.hero .right h2{
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+.hero .right h1{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    line-height: 2.5rem;
+}
+.hero .right h1 span{
+    color: var(--primary);
+    font-size: 2rem;
+}
+.hero .right p span{
+    color: var(--primary);
+}
+.hero .right p{
+    margin-bottom: 2rem;
+}
+.container-1 .left img{
+    width: 550px;
+    height: 700px;
+}
+section{
+    padding: 6rem 0;
+}
+section.about .container-1 .right h1{
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    
+}
+section.about .right h1 span ,section.about .right h3 span {
+    color: var(--primary);
+}
+section.about .right h3{
+    margin-bottom: 1rem;
+    text-align: left;
+}
+section .right p{
+    font-family: 'lato',sans-serif;
+    color: var(--ternary);
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+}
+section.about .social{
+    display: flex;
+    
+}
+section.about .social a{
+    background: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 0.7rem;
+    transition: all .3s ease;
+
+}
+section.about .social a:hover{
+    background: var(--pure);
+}
+section.about .social a img{
+    width: 100%;
+    height: 100%;
+    padding: 0.6rem;
+}
+.section-heading{
+    color: var(--dark);
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 0.5;
+}
+.section-heading span{
+    color: var(--primary);
+}
+section.education p span{
+    color: var(--dark);
+}
+.section-heading + p{
+    color: var(--ternary);
+    font-family: 'lato',sans-serif;
+    margin-bottom: 9rem;
+    text-align: center;
+}
+section.services{
+    background: var(--light);
+}
+section.services .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap:2rem;
+    grid-row-gap:6rem;
+}
+section.services .card-wrapper .card{
+    background: var(--pure);
+    padding: 3rem 2rem;
+    position: relative;
+    padding-top: 6rem;
+    text-align: center  ;
+    transition: all .3s ease;
+}
+section.services .card-wrapper .card img{
+    position: absolute;
+    top:-3.5rem;
+    left:35%;
+    transform: translateX(-50);
+    width: 100px;
+    height: 100px;
+}
+section.services .card-wrapper .card h2{
+    margin-bottom: 00.6rem;
+}
+section.services .card-wrapper .card p{
+    font-family: 'lato',sans-serif;
+    color: var(--ternary);
+    line-height: 1.6;
+}
+section.services .card-wrapper .card:hover{
+    background: var(--dark);
+}
+section.services .card-wrapper .card:hover h2 {
+    color: var(--pure);
+}
+section.services .card-wrapper .card:hover p{
+    color: var(--pure);
+}
+section.education .card-wrapper{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-column-gap:2rem;
+    grid-row-gap:6rem;
+    
+}
+section.education .card-wrapper .card img{
+    position: absolute;
+    width: 100%;
+    height: 500px;
+}
+section.education .card-wrapper .card{
+    position: relative;
+    height: 800px;
+    
+
+}
+section.education .card-wrapper .card h2{
+    margin-top: 550px;
+    color: var(--primary);
+}
+section.education .card-wrapper .card h2,h3,h5{
+    text-align: center;
+    line-height: 1.9;
+    font-size: 2rem;
+}
+footer.get-in-touch{
+    text-align: center;
+    background: var(--dark);
+    height: 500px;
+    clip-path: polygon(0 0,100% 0,100% 100%,70% 80%,0 100%);
+}
+footer.get-in-touch h1{
+    color: var(--primary);
+    padding-top:30px ;
+    margin-bottom: 40px;
+
+}
+.get-in-touch  h1 span{
+color: var(--pure);
+}
+footer.get-in-touch h4{
+    color: yellow;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    font-weight: lighter;
+    font-family: 'lato',sans-serif;
+}
+.get-in-touch .social{
+    display: flex;
+}
+.get-in-touch .social a{
+    background: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 2rem;
+    transition: all .3s ease;
+
+}
+.get-in-touch .social a:hover{
+    background: var(--pure);
+}
+
+.get-in-touch .social a img{
+    width: 100%;
+    height: 100%;
+    padding: 0.6rem;
+}
+.email{
+    margin-top: 2rem;
+    color: var(--pure);
+    font-size: 1.5rem;
+}
+.email h6 span{
+    color: var(--primary);
+}
+footer.get-in-touch .madeby h1{
+    font-size: 1rem;
+    text-align: right;
+    margin: 0 3rem;
+    color:var(--light) ;
+    font-weight: 100;
+}
